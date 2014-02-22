@@ -1,0 +1,10 @@
+name    'insonifi/ps-unzip'
+version '0.1.0'
+source 'git://github.com/insonifi/ps-unzip'
+author 'Andrey Panteleyev'
+license 'Apache License, Version 2.0'
+summary 'PowerShell unzip'
+description 'Unzip implemented with PowerShell'
+project_page 'https://github.com/insonifi/ps-unzip'
+
+dependency 'joshcooper/powershell', '>= 0.0.6'
