@@ -32,6 +32,9 @@ define ps-unzip (
     $file, #: zip file path
     $destination, #: output directory path
     ) {
+    if $::operatingsystem != 'windows'{
+       fail("Unsupported OS ${::operatingsystem}")
+    }
     debug('Validate file path (${file})')
     validate_string($file)
     validate_re($file, ['\.zip'])
